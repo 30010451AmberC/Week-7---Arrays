@@ -61,8 +61,42 @@ namespace Array_practice_excercises
             string[] names = {"Bob", "Jerry", "Greg", "Sarah", "Alice" };
             Random rand = new Random();
 
-            Console.WriteLine($"{names[rand.Next(0,4)]}");
+            Console.WriteLine($"The winning ticket number is: {names[rand.Next(0,4)]}");
         }
 
+        public static void task4()
+        {
+            //Task 4:
+
+            string[] greetings = { "Hello", "Bonjour", "Kia Ora", "Hola", "Talofa" };
+            Console.WriteLine("Select a language...");
+            Console.WriteLine("Press 1 for English");
+            Console.WriteLine("Press 2 for French");
+            Console.WriteLine("Press 3 for Maori");
+            Console.WriteLine("Press 4 for Spanish");
+            Console.WriteLine("Press 5 for Samoan");
+            int selection = int.Parse(Console.ReadLine()) - 1;
+
+            switch(selection)
+            {
+                case 1:
+                    Console.WriteLine(greetings[selection]);
+                    break;
+                case 2:
+                    Console.WriteLine(greetings[selection]);
+                    break;
+                case 3:
+                    Console.WriteLine(greetings[selection]);
+                    break;
+                case 4:
+                    Console.WriteLine(greetings[selection]);
+                    break;
+                case 5:
+                    Console.WriteLine(greetings[selection]);
+                    break;
+                default:
+                    Console.WriteLine("Something went wrong!");
+            }
+        }
     }
 }
