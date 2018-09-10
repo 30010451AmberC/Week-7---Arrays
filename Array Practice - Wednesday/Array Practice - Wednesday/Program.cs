@@ -80,8 +80,10 @@ namespace Array_Practice___Wednesday
             {
                 Console.WriteLine($"Please enter number {i + 1}: ");
                 array1[i] = int.Parse(Console.ReadLine());
-                
             }
+            Console.WriteLine($"Number 1 (Array 0): ");
+
+            int[] array2 = new int[5];
         }
     }
 }
